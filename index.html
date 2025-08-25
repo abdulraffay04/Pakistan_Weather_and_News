@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pakistan Weather & News</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+  <h1>🌤 Pakistan Weather & News</h1>
+
+  <div class="container">
+    <!-- Left News -->
+    <div id="leftNews" class="news-section"></div>
+
+    <!-- Main Weather Content -->
+    <div class="main-content">
+      <!-- Search Box -->
+      <div class="search-box">
+        <input type="text" id="searchBox" list="cities" placeholder="Enter city name">
+        <datalist id="cities">
+          <option value="Abbottabad">
+          <option value="Bahawalpur">
+          <option value="Faisalabad">
+          <option value="Gujranwala">
+          <option value="Hyderabad">
+          <option value="Islamabad">
+          <option value="Karachi">
+          <option value="Lahore">
+          <option value="Multan">
+          <option value="Peshawar">
+          <option value="Quetta">
+          <option value="Rawalpindi">
+          <option value="Sargodha">
+          <option value="Sialkot">
+          <option value="Sukkur">
+          <option value="Swat">
+          <option value="Vehari">
+        </datalist>
+        <button onclick="searchCity()">🔍 Search</button>
+      </div>
+
+      <!-- Quick-access buttons -->
+      <div id="quickCities">
+        <button onclick="getWeather('Karachi,pk')">Karachi</button>
+        <button onclick="getWeather('Lahore,pk')">Lahore</button>
+        <button onclick="getWeather('Islamabad,pk')">Islamabad</button>
+        <button onclick="getWeather('Rawalpindi,pk')">Rawalpindi</button>
+        <button onclick="getWeather('Multan,pk')">Multan</button>
+        <button onclick="getWeather('Quetta,pk')">Quetta</button>
+      </div>
+
+      <!-- Today Weather -->
+      <div id="today"></div>
+
+      <!-- Forecast -->
+      <div id="weather"></div>
+    </div>
+
+    <!-- Right News -->
+    <div id="rightNews" class="news-section"></div>
+  </div>
+
+  <footer>
+  <p>
+    <i class="fas fa-cloud-sun"></i> Made by <b>Abdul Raffay</b>
+  </p>
+  <p>
+    <a href="https://github.com/abdulraffay04" target="_blank">
+      <i class="fab fa-github"></i> GitHub
+    </a> | 
+    <a href="https://www.linkedin.com/in/abdul-raffay-b1b1a62aa/" target="_blank">
+      <i class="fab fa-linkedin"></i> LinkedIn
+    </a>
+  </p>
+</footer>
+
+
+
+
+  <script src="weather.js"></script>
+  <script src="news.js"></script>
+</body>
+</html>

@@ -1,0 +1,261 @@
+/* General styling */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #007BFF, #00C851);
+  color: white;
+  min-height: 100vh;
+}
+
+/* Title */
+h1 {
+  margin: 20px 0;
+  font-size: 2.5rem;
+}
+
+/* Search box */
+.search-box {
+  margin: 20px;
+}
+
+.search-box input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  width: 200px;
+}
+
+.search-box button {
+  padding: 10px 15px;
+  margin-left: 5px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background: #ffcc00;
+  color: black;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-box button:hover {
+  background: #ffdd33;
+}
+
+/* Quick cities */
+#quickCities {
+  margin: 15px 0;
+}
+
+#quickCities button {
+  margin: 15px;
+  padding: 10px 35px;
+  border: none;
+  border-radius: 8px;
+  background: #ff5722;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#quickCities button:hover {
+  background: #ff784e;
+}
+
+/* Weather cards */
+#weather {
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  margin: 10px;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  width: 180px;
+  color: white;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 60px;
+  margin: 10px 0;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .search-box input {
+    width: 150px;
+  }
+  .card {
+    width: 140px;
+  }
+}
+
+
+
+/* Today’s weather */
+#today {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 400px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  color: white;
+  backdrop-filter: blur(8px);
+}
+
+#today h2 {
+  margin: 10px 0;
+  font-size: 1.8rem;
+}
+
+#today img {
+  width: 80px;
+}
+
+#today p {
+  font-size: 1.1rem;
+  margin: 5px 0;
+}
+
+
+
+
+
+
+
+
+/* Container for layout */
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px;
+}
+
+/* News sections */
+.news-section {
+  width: 200px;
+  max-height: 180vh;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 12px;
+  backdrop-filter: blur(8px);
+  color: white;
+}
+
+.news-section h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* News card */
+.news-card {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 8px;
+  margin: 5px 0;
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+
+.news-card:hover {
+  transform: scale(1.02);
+}
+
+.news-card a {
+  text-decoration: none;
+  color: white;
+}
+
+.news-card h4 {
+  font-size: 1rem;
+  margin: 0 0 4px 0;
+}
+
+.news-card p {
+  font-size: 0.8rem;
+  margin: 0;
+  opacity: 0.8;
+}
+
+.news-card img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 5px;
+  object-fit: cover;
+  height: 100px;
+}
+
+/* Adjust h4 for smaller space if thumbnail is present */
+.news-card h4 {
+  font-size: 0.95rem;
+  margin: 5px 0;
+}
+
+/* Optional: hover effect */
+.news-card:hover {
+  transform: scale(1.03);
+}
+
+
+
+/* Responsive */
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .news-section {
+    width: 90%;
+    max-height: none;
+  }
+}
+
+
+/* Footer */
+footer {
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+  margin-top: 30px;
+  font-size: 0.9rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+footer p {
+  margin: 5px 0;
+  opacity: 0.9;
+}
+
+footer a {
+  color: #ffcc00;
+  text-decoration: none;
+  margin: 0 8px;
+  transition: 0.3s;
+  font-size: 1rem;
+}
+
+footer a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+footer i {
+  margin-right: 5px;
+  color: #ffcc00; /* gold accent for icons */
+}
